@@ -1,0 +1,27 @@
+<!-- Portfolio Grid Section -->
+    <section class="success" id="portfolio">
+        <div class="container">
+        <h2 class="text-center">Portfolio</h2>
+                    <hr class="star-light">
+            <div class="row">
+                {% assign sitePosts = site.posts | sort: 'order' %}
+                {% for post in sitePosts %}
+                    {% if post.type == 'major' %}
+                    <div class="col-sm-12 portfolio-major-item">
+                    {% else %}
+                    <div class="col-sm-4 portfolio-item">
+                    {% endif %}
+                        <a class="portfolio-link" href="#{{ post.modalID }}" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                    <h3>{{ post.title }}</h3>
+                                </div>
+                            </div>
+                            <img src="{{ site.baseurl }}/{{ post.img }}" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>

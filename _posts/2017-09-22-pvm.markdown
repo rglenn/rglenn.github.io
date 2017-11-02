@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "Project Vending Machine"
+date:   2018-09-22 10:04:00 -0500
+img: img/portfolio/ProjectVendingMachine.jpg
+modalID: modalVendingMachine
+order: 9
+type: minor
+carousel:
+  - img: /img/portfolio/vendingmachine/pvm1.jpg
+  - img: /img/portfolio/vendingmachine/pvm2.jpg
+  - img: /img/portfolio/vendingmachine/pvm3.jpg
+---
+The Project Vending Machine is a vending machine for digital goods. The user inserts a USB memory stick, selects the files they'd like with a series of knobs, and pushes a button to copy those files to their thumb drive. The built version focused on distributing source code and design documents for a number of DIY projects.
+
+The first version used a Linux-based Chumby alarm clock, which interfaced over I2C with LEDs and optical sensors to detect knob positions. A shell script ran the overall process, which used short C programs to handle IO interfacing.
+
+The second version uses a Raspberry Pi computer, and uses a Python script to drive the LEDs over SPI, and read the switch inputs using an I2C GPIO expander.

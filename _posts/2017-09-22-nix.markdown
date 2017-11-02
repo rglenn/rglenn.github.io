@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "Nix Mini"
+date:   2017-09-22 10:04:00 -0500
+img: img/portfolio/NixMini.jpg
+modalID: modalNix
+order: 2
+type: major
+carousel:
+  - img: /img/portfolio/nixmini/NixMiniInAction.jpg
+  - img: /img/portfolio/nixmini/NixMini4.jpg
+  - img: /img/portfolio/nixmini/NixMini6.jpg
+  - img: /img/portfolio/nixmini/NixMini7.jpg
+  - img: /img/portfolio/nixmini/NixMini10.jpg
+---
+The Nix Mini is a Bluetooth Low Energy colour sensor, used to match and capture the colour of objects in the real world. It works with a smartphone app to deliver colour information to the user, in multiple colour spaces, and matched against the colour databases of many major paint companies.
+
+My role in the development of the Nix Mini was to develop the firmware for the product, and assist in passing the device through FCC, CE, and Industry Canada EMC certification.
+
+More information is available at [the product website, nixmini.com][nix-mini-link].
+
+[nix-mini-link]: https://nixmini.com/

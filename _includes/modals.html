@@ -1,0 +1,50 @@
+{% for post in site.posts %}
+    <div class="portfolio-modal modal fade" id="{{ post.modalID }}" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="modal-body">
+            <div class="row">
+                <div class="col-lg-12 mx-auto">
+                    <h2>{{ post.title }}</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 ml-auto">
+                    {% if post.carousel %}
+                      <div id="{{ post.modalID }}Slider" class="flexslider img-centered">
+                        <ul class="slides">
+                          {% for slides in post.carousel %}
+                          <li>
+                            <img src="{{ slides.img }}">
+                          </li>
+                          {% endfor %}
+                        </ul>
+                      </div>
+                    {% else %}
+                  <img class="img-fluid img-centered" src="{{ site.baseurl }}/{{ post.img }}" alt="">
+                  {% endif %}
+              </div>
+              <div class="col-lg-6 mr-auto">
+                  {{ post.content }}
+              </div>
+          </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                  <button class="btn btn-success" type="button" data-dismiss="modal">
+                    <i class="fa fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endfor %}

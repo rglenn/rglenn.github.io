@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "Baby Boss"
+date:   2017-09-22 10:04:00 -0500
+img: img/portfolio/babyboss.jpg
+modalID: modalBabyBoss
+order: 5
+type: minor
+carousel:
+  - img: /img/portfolio/babyboss/BabyBoss1.jpg
+  - img: /img/portfolio/babyboss/BabyBoss2.jpg
+  - img: /img/portfolio/babyboss/BabyBoss3.jpg
+---
+Baby Boss was a project done as part of the [PCH Toronto Hardware Hackathon][pch-hackathon-link]. It's a Wifi-connected to-do list of baby supplies. Nine icons represent different supplies that might be needed. Pressing a button turns on a button, and syncs with an online shopping list - automatically marking that item as being needed. Someone else from the household can then check their phone to see what needs to be picked up before heading home from work. The app and hardware are both updated in real time, so they're always in sync.
+
+Our team of 4 designed and built the prototype - electronics, firmware, enclosure, server, and web app - in under 48 hours, and had a working demo for the end of the hackathon, while a business team determined a marketing strategy and researched the size of the potential market. I primarily worked on electronics and firmware, while providing some help in developing the MQTT interface with the server.
+
+[pch-hackathon-link]: http://www.pchintl.com/pch-announces-toronto-hardware-hackathon/
